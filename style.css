@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-align: right;
+    background-color: #f9f9f9;
+}
+
+.main-layout {
+    display: flex;
+    gap: 10px;
+}
+
+/* Number Buttons */
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 70%;
+}
+
+.numbers button {
+    width: 30%;
+    height: 60px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e6e6e6;
+    transition: background-color 0.3s ease;
+}
+
+.numbers button:hover {
+    background-color: #d4d4d4;
+}
+
+.numbers button:active {
+    background-color: #c4c4c4;
+}
+
+/* Operation Buttons */
+.operations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+.operations button {
+    height: 60px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.operations button#clear {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.operations button#clear:hover {
+    background-color: #e65a5a;
+}
+
+.operations button#clear:active {
+    background-color: #cc4f4f;
+}
+
+.operations button#equals {
+    background-color: #4caf50;
+    color: white;
+}
+
+.operations button#equals:hover {
+    background-color: #43a047;
+}
+
+.operations button#equals:active {
+    background-color: #388e3c;
+}
+
+.operations button:not(#clear):not(#equals) {
+    background-color: #f9d342;
+}
+
+.operations button:not(#clear):not(#equals):hover {
+    background-color: #e6c432;
+}
+
+.operations button:not(#clear):not(#equals):active {
+    background-color: #d4b32f;
+}
